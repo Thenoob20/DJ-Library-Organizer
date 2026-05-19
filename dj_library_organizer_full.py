@@ -63,8 +63,8 @@ except ImportError:
 # USER CONFIG
 # ==========================================================
 
-SOURCE_ROOT = Path("/Users/jonathandiaz/DJ_MUSIC")
-DEST_ROOT = Path("/Users/jonathandiaz/DJ_MUSIC_2")
+SOURCE_ROOT = Path("/Users/UserName/DJ_MUSIC")
+DEST_ROOT = Path("/Users/Usernaem/DJ_MUSIC_2")
 
 REPORT_DIR = DEST_ROOT / "_Reports"
 PLAYLIST_DIR = DEST_ROOT / "_Playlists"
