@@ -64,7 +64,7 @@ except ImportError:
 # ==========================================================
 
 SOURCE_ROOT = Path("/Users/UserName/DJ_MUSIC")
-DEST_ROOT = Path("/Users/Usernaem/DJ_MUSIC_2")
+DEST_ROOT = Path("/Users/username/DJ_MUSIC_2")
 
 REPORT_DIR = DEST_ROOT / "_Reports"
 PLAYLIST_DIR = DEST_ROOT / "_Playlists"
@@ -81,8 +81,25 @@ AUDIO_EXTS = {
     ".mp3", ".m4a", ".aac", ".wav", ".flac", ".aiff", ".aif", ".ogg"
 }
 
+AUDIO_EXTS = {
+    ".mp3",
+    ".wav",
+    ".flac",
+    ".m4a",
+    ".aac",
+    ".aiff",
+    ".aif",
+    ".ogg",
+    ".wma",
+    ".alac",
+}
+
 VIDEO_EXTS = {
-    ".mp4", ".mov", ".mkv", ".avi", ".m4v"
+    ".mp4",
+    ".mov",
+    ".mkv",
+    ".avi",
+    ".m4v",
 }
 
 # Best hybrid DJ folder system:
@@ -808,7 +825,7 @@ def append_processed_state(job_name: str, source_path: Path) -> None:
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     state_file = STATE_DIR / f"{job_name}_processed.txt"
     with state_file.open("a", encoding="utf-8") as f:
-        f.write(str(source_path) + "\n")
+       f.write(str(source_path) + "\n")
 
 
 def write_onetagger_sidecar(rows: List[TrackInfo], filename: str) -> Path:
