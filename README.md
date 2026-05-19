@@ -1,6 +1,8 @@
 # DJ Library Organizer
 Please Back up your music Library 
+
 A Python tool for DJs who need to migrate and clean large music libraries outside of Apple
+
 Music/iTunes.
 Features:
 - Audit source libraries with CSV reports
@@ -9,6 +11,7 @@ Features:
 - Support copy, move, dry-run, resume, and clean-audit modes
 - Generate M3U playlists for Serato and VirtualDJ
 - Create One Tagger-friendly suggestion CSVs
+
 Safe workflow:
 1. Run audit
 2. Run dry-run
